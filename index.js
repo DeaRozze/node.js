@@ -156,7 +156,7 @@ async function sorter(src) {
             const folderName = path.join(config.dist, file[0].toUpperCase())
             await creteDir(folderName)
             const resFile = path.join(folderName, file)
-            await copyFile(resFile)
+            await copyFile(currentPath, resFile)
         }
     }
 }
